@@ -13,5 +13,5 @@ steps:
 
 - script: |
     echo "Running the JAR file"
-    java -jar target/SimpleMaven-1.0-SNAPSHOT.jar
+    java -jar target/My-1.0-SNAPSHOT.jar
   displayName: 'Run JAR'
