@@ -5,13 +5,9 @@ pool:
   name: Default
 
 steps:
-- script: echo "My first Azure Pipeline for Maven project"
-  displayName: 'Say Hello'
-
+- script: echo 'one line run'
+  displayName: 'running first maven application'
 - script: mvn clean install
-  displayName: 'Build with Maven'
-
-- script: |
-    echo "Running the JAR file"
-    java -jar target/My-1.0-SNAPSHOT.jar
-  displayName: 'Run JAR'
+  displayName: 'Build'
+- script: java -jar target/My-1.0-SNAPSHOT.jar
+  displayName: 'Run Application'
